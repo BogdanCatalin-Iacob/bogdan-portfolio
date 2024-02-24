@@ -110,3 +110,35 @@ a:hover:after {
     background-repeat: no-repeat;
     position: relative;
 }
+
+/* *********************************** */
+/*               Hero image            */
+/* *********************************** */
+
+.container-wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+#main {
+    width: calc(100% - 300px);
+    float: right;
+}
+
+#hero-image {
+    min-height: 500px;
+    background-color: #2288FC;
+    width: 100%;
+    float: left;
+    margin-bottom: 10em;
+    clear: both;
+
+}
+
+@media screen and (max-width: 768px) {
+    #main {
+        width: 100%;
+        padding: 0 1em;
+    }
+    
+}
