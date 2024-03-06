@@ -46,6 +46,17 @@ h6 {
     font-family: 'Roboto', Helvetica, sans-serif;
 }
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 1.5rem .75rem 0 .75rem;
+}
+
+.col {
+    flex: 1 0 0%;
+}
+
 a {
     color: var(--color-black);
     transition: .5s;
