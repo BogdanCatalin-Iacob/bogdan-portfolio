@@ -50,7 +50,7 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: 1.5rem .75rem 0 .75rem;
+    margin: 1.5em .75em 0 .75em;
 }
 
 .col {
@@ -61,6 +61,7 @@ a {
     color: var(--color-black);
     transition: .5s;
     -webkit-transition: .5s;
+    -moz-transition: .5s;
     -o-transition: .5s;
     text-decoration: none;
     position: relative;
@@ -169,7 +170,7 @@ a:hover:after {
 }
 
 .heading-meta {
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
     display: block;
     font-size: 13px;
     text-transform: uppercase;
@@ -178,12 +179,57 @@ a:hover:after {
     opacity: 0.6;
 }
 
+.services {
+    margin-bottom: 2em;
+    padding: 1.5em;
+    box-shadow: 0 0 4em -8px rgba(0, 0, 0, .15);
+    z-index: 0;
+}
+
+.services .icon {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.services .icon i {
+    font-size: 2rem;
+}
+
+.services h3 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.color-1 {
+border-bottom: 2px solid var(--color-orange);
+}
+
+.color-1 i {
+    color: var(--color-orange);
+}
+
+.color-2 {
+    border-bottom: 2px solid var(--color-green);
+}
+
+.color-2 i {
+    color: var(--color-green);
+}
+
+.color-3 {
+    border-bottom: 2px solid var(--color-blue);
+}
+
+.color-3 i {
+    color: var(--color-blue);
+}
+
 @media screen and (max-width: 768px) {
 
     /* *********************************** */
     /*               Hero image            */
     /* *********************************** */
-    
+
     #main {
         width: 100%;
         padding: 0 1em;
@@ -195,5 +241,9 @@ a:hover:after {
 
     .heading {
         margin-bottom: 3em;
+    }
+
+    .services {
+        margin-bottom: 4em;
     }
 }
