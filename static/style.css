@@ -17,7 +17,7 @@ body {
     box-sizing: border-box;
     height: 100%;
     /* set font for all elements */
-    font-family: 'Lato', Arial, sans-serif;
+    font-family: "Quicksand", Arial, sans-serif;
     color: var(--color-black);
 }
 
@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto', Helvetica, sans-serif;
+    font-family: "Playfair Display", Georgia, serif;
 }
 
 .row {
