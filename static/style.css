@@ -153,9 +153,47 @@ a:hover:after {
     clear: both;
 }
 
+/* *********************************** */
+/*               About section         */
+/* *********************************** */
+
+.heading {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 4em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.8;
+    position: relative;
+}
+
+.heading-meta {
+    margin-bottom: 1rem;
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 5px;
+    opacity: 0.6;
+}
+
 @media screen and (max-width: 768px) {
+
+    /* *********************************** */
+    /*               Hero image            */
+    /* *********************************** */
+    
     #main {
         width: 100%;
         padding: 0 1em;
+    }
+
+    /* *********************************** */
+    /*               About section         */
+    /* *********************************** */
+
+    .heading {
+        margin-bottom: 3em;
     }
 }
