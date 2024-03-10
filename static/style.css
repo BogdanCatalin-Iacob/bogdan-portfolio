@@ -53,6 +53,12 @@ h6 {
     margin: 1.5em .75em 0 .75em;
 }
 
+.row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
+
 .col {
     flex: 1 0 0%;
 }
@@ -161,7 +167,7 @@ a:hover:after {
 .heading {
     font-size: 1.1rem;
     display: block;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -240,9 +246,12 @@ border-bottom: 2px solid var(--color-orange);
     /* *********************************** */
 
     .heading {
-        margin-bottom: 3em;
+        margin-bottom: 1em;
     }
 
+    .col {
+        flex: 0 0 auto;
+        
     .services {
         margin-bottom: 4em;
     }
