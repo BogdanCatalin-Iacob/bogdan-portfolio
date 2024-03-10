@@ -185,22 +185,6 @@ a:hover:after {
     opacity: 0.6;
 }
 
-.services {
-    margin-bottom: 2em;
-    padding: 1.5em;
-    box-shadow: 0 0 4em -8px rgba(0, 0, 0, .15);
-    z-index: 0;
-}
-
-.services .icon {
-    display: block;
-    margin-bottom: 20px;
-}
-
-.services .icon i {
-    font-size: 2rem;
-}
-
 .services h3 {
     font-size: 1rem;
     font-weight: 500;
@@ -230,6 +214,97 @@ border-bottom: 2px solid var(--color-orange);
     color: var(--color-blue);
 }
 
+.services {
+    position: relative;
+    margin-bottom: 4em;
+    padding: 1.5em;
+    min-width: 200px;
+    box-shadow: 0 0 4em -8px rgba(0, 0, 0, .15);
+    z-index: 0;
+}
+
+.services .icon {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    width: 100px;
+    height: 50px;
+    display: table;
+    margin: 0 auto;
+    background-color: var(--color-blue);
+}
+
+.services .icon::before, .services .icon::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: '';
+}
+
+.services .icon::before {
+    top: -30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 30px 50px;
+    border-color: transparent transparent var(--color-blue) transparent;
+}
+
+  .services .icon::after {
+    bottom: -30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 50px 0 50px;
+    border-color: var(--color-blue) transparent transparent transparent;
+}
+
+.services .icon i {
+    font-size: 2rem;
+    z-index: 1;
+    color: var(--color-white);
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.services.color-1 .icon {
+    background-color: var(--color-orange);
+}
+
+.services.color-1 .icon::before {
+    border-color: transparent transparent var(--color-orange) transparent;
+}
+
+.services.color-1 .icon::after {
+    border-color: var(--color-orange) transparent transparent transparent;
+}
+
+.services.color-2 .icon {
+    background-color: var(--color-green);
+}
+
+.services.color-2 .icon::before {
+    border-color: transparent transparent var(--color-green) transparent;
+}
+
+.services.color-2 .icon::after {
+    border-color: var(--color-green) transparent transparent transparent;
+}
+
+.services.color-3 .icon {
+    background-color: var(--color-blue);
+}
+
+.services.color-3 .icon::before {
+    border-color: transparent transparent var(--color-blue) transparent;
+}
+
+.services.color-3 .icon::after {
+    border-color: var(--color-blue) transparent transparent transparent;
+}
+
 @media screen and (max-width: 768px) {
 
     /* *********************************** */
@@ -251,7 +326,8 @@ border-bottom: 2px solid var(--color-orange);
 
     .col {
         flex: 0 0 auto;
-        
+    }
+
     .services {
         margin-bottom: 4em;
     }
