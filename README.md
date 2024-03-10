@@ -1,6 +1,20 @@
 # Bogdan Iacob
 This portfolio is made solely to showcase some of my work as Software developer
 
+## Table of contents
+* [User Experience (UX)](#user-experience)
+* [Structure](#structure)
+* [Design](#design)
+    * [Colour Scheme](#colour-scheme)
+    * [Typography](#typography)
+    * [Wireframes](#wireframes)
+* [Features](#features)
+    * [Existing Features](#existing-features)
+* [Technologies](#technologies)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
+
 ## Design
 
 -   ### Typography
