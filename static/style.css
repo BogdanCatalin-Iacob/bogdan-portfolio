@@ -340,6 +340,10 @@ border-bottom: 2px solid var(--color-orange);
         -webkit-backdrop-filter: blur(5.1px);
     }
 
+    .education {
+        text-align: center;
+    }
+
 @media screen and (max-width: 768px) {
 
     /* *********************************** */
