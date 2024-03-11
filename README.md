@@ -39,6 +39,8 @@ This portfolio is made solely to showcase some of my work as Software developer
 -   CSS
 -   [Font Awesome](https://fontawesome.com/) - used for icons throughout the website
 -   [Google Fonts](https://fonts.google.com/)
+-   [Glass Morphism](https://css.glass/)
 
 ## Credits
--   Hexagon shapes for services section were created based on examples found on [James Tauber - CSS Hexagon Tutorial](https://jtauber.github.io/articles/css-hexagon.html) 
+-   Hexagon shapes for services section were created based on examples found on [James Tauber - CSS Hexagon Tutorial](https://jtauber.github.io/articles/css-hexagon.html)
+-   Skills cards background created using [GlassMorphism](https://css.glass/)

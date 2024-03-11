@@ -316,6 +316,30 @@ border-bottom: 2px solid var(--color-orange);
     text-transform: uppercase;
 }
 
+    /* *********************************** */
+    /*              Skills section         */
+    /* *********************************** */
+
+    .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .skills-item {
+        text-align: center;
+        min-width: 70px;
+        margin: 15px;
+        padding: 20px;
+        font-size: 13px;
+        /* From https://css.glass */
+        background: rgba(255, 249, 251, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5.1px);
+        -webkit-backdrop-filter: blur(5.1px);
+    }
+
 @media screen and (max-width: 768px) {
 
     /* *********************************** */
