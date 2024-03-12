@@ -19,6 +19,7 @@ body {
     /* set font for all elements */
     font-family: "Quicksand", Arial, sans-serif;
     color: var(--color-black);
+    background-color: var(--color-white);
 }
 
 /* keep the footer at the bottom of the page
