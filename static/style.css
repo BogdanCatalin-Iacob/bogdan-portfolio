@@ -125,6 +125,7 @@ a:hover:after {
     width: 300px;
     position: fixed;
     z-index: 1000;
+    background-color: #f2f3f7;
 }
 
 .author-img {
@@ -142,6 +143,49 @@ a:hover:after {
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
+}
+
+.position {
+    display: block;
+    margin-bottom: 1em;
+    font-size: 13px;
+}
+
+#logo {
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#main-menu {
+    display: block;
+    width: 100%;
+}
+
+.collapse {
+    display: block !important;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: .6em 0;
+}
+
+.active {
+    color: var(--color-blue) !important;
+    text-decoration: underline;
 }
 
 /* *********************************** */
@@ -448,6 +492,19 @@ border-bottom: 2px solid var(--color-orange);
     }
 
 @media screen and (max-width: 768px) {
+
+    #aside {
+        -moz-transform: translate(-300px);
+        -webkit-transform: translate(-300px);
+        -o-transform: translate(-300px);
+        -ms-transform: translate(-300px);
+        transform: translate(-300px);
+        padding-top: 4em;
+    }
+
+    #navbar ul {
+        margin: 0 0 2em 0
+    }
 
     /* *********************************** */
     /*               Hero image            */
