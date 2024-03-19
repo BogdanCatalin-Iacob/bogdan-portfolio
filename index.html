@@ -76,22 +76,32 @@
         <main id="main">
             <!-- Hero section -->
             <section id="hero-image">
-                <div class="slider">
-                    <ul class="slides">
-                        <li>
+                <div class="slideshow-container">
+
+                    <div class="hero-slide fade">
+                        <div>
                             <h1>Hi! <br>I'm Bogdan</h1>
                             <h2>Web Developer</h2>
                             <p><a class="btn">Download CV <i class="fa-solid fa-download"></i></a>
                             </p>
-                            <img class="side-img" src="static/images/businessperson.png" alt="tv head human graphic art">
-                        </li>
-                        <li>
+                        </div>
+
+                        <img class="side-img" src="static/images/businessperson.png" alt="tv head human graphic art">
+                    </div>
+
+                    <div class="hero-slide fade">
+                        <div>
                             <h1>I am a <br>Full Stack <br>Developer</h1>
                             <p><a class="btn">View Portfolio <i class="fa-solid fa-briefcase"></i></a>
                             </p>
-                            <img class="side-img" src="static/images/robot-pc.png" alt="robot working on laptop">
-                        </li>
-                    </ul>
+                        </div>
+                        <img class="side-img" src="static/images/robot-pc.png" alt="robot working on laptop">
+                    </div>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
                 </div>
             </section>
             <!-- end hero section -->
@@ -569,6 +579,7 @@
         </main>
     </div>
     <script src="static/js/sendEmail.js"></script>
+    <script src="static/js/slideshow.js"></script>
 </body>
 
 </html>
