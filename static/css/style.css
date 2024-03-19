@@ -48,6 +48,14 @@ h6 {
     font-family: "Playfair Display", Georgia, serif;
 }
 
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -596,5 +604,21 @@ button[type=reset]:hover {
 
     .projects img {
         width: 100%;
+    }
+
+    .btn {
+        padding: .5em 1em;
+    }
+
+    /* *********************************** */
+    /*            Contact section          */
+    /* *********************************** */
+    .contact {
+        display: block;
+    }
+
+    .contact-links {
+        display: flex;
+        justify-content: center;
     }
 }
