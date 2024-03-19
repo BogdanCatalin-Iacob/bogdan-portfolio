@@ -40,6 +40,7 @@ This portfolio is made solely to showcase some of my work as Software developer
 -   [Font Awesome](https://fontawesome.com/) - used for icons throughout the website
 -   [Google Fonts](https://fonts.google.com/)
 -   [Glass Morphism](https://css.glass/)
+-   [EmailJs](https://www.emailjs.com/)
 
 ## Credits
 -   Hexagon shapes for services section were created based on examples found on [James Tauber - CSS Hexagon Tutorial](https://jtauber.github.io/articles/css-hexagon.html)
