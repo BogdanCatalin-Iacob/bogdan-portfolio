@@ -3,7 +3,7 @@
 /* *********************************** */
 /* color pallete */
 :root {
-    --color-black : #0C1618;
+    --color-black: #0C1618;
     --color-orange: #FF8811;
     --color-blue: #2288FC;
     --color-green: #A1EF8B;
@@ -31,10 +31,11 @@ body {
     min-height: 100vh;
     flex-direction: column;
 }
-  
+
 main {
     flex: 1 0 auto;
 }
+
 /* end body length */
 
 /* set font for heading elements */
@@ -54,7 +55,7 @@ h6 {
     margin: 1.5em .75em 0 .75em;
 }
 
-.row > * {
+.row>* {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
@@ -193,6 +194,7 @@ a:hover:after {
 /* *********************************** */
 
 #main {
+    /* 300px side navbar */
     width: calc(100% - 300px);
     float: right;
 }
@@ -205,10 +207,54 @@ a:hover:after {
     clear: both;
 }
 
-/* .side-img {
+.hero-slide {
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.side-img {
     width: 50%;
-    border: 1px solid black;
-} */
+    padding: 1em;
+    margin: 1em;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border: 2px solid var(--color-blue);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-slide, .dot:hover {
+    background-color: var(--color-blue);
+  }
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
 
 /* *********************************** */
 /*               About section         */
@@ -241,7 +287,7 @@ a:hover:after {
 }
 
 .color-1 {
-border-bottom: 2px solid var(--color-orange);
+    border-bottom: 2px solid var(--color-orange);
 }
 
 .color-1 i {
@@ -286,7 +332,8 @@ border-bottom: 2px solid var(--color-orange);
     background-color: var(--color-blue);
 }
 
-.services .icon::before, .services .icon::after {
+.services .icon::before,
+.services .icon::after {
     position: absolute;
     left: 0;
     right: 0;
@@ -302,7 +349,7 @@ border-bottom: 2px solid var(--color-orange);
     border-color: transparent transparent var(--color-blue) transparent;
 }
 
-  .services .icon::after {
+.services .icon::after {
     bottom: -30px;
     width: 0;
     height: 0;
@@ -366,135 +413,139 @@ border-bottom: 2px solid var(--color-orange);
     text-transform: uppercase;
 }
 
-    /* *********************************** */
-    /*              Skills section         */
-    /* *********************************** */
+/* *********************************** */
+/*              Skills section         */
+/* *********************************** */
 
-    .skills-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-    .skills-item {
-        text-align: center;
-        min-width: 70px;
-        margin: 15px;
-        padding: 20px;
-        font-size: 13px;
-        /* From https://css.glass */
-        background: rgba(255, 249, 251, 0.27);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5.1px);
-        -webkit-backdrop-filter: blur(5.1px);
-    }
+.skills-item {
+    text-align: center;
+    min-width: 70px;
+    margin: 15px;
+    padding: 20px;
+    font-size: 13px;
+    /* From https://css.glass */
+    background: rgba(255, 249, 251, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+}
 
-    .education {
-        text-align: center;
-    }
+.education {
+    text-align: center;
+}
 
-    /* *********************************** */
-    /*            Projects section         */
-    /* *********************************** */
+/* *********************************** */
+/*            Projects section         */
+/* *********************************** */
 
-    .projects {
-        display: flex;
-        position: relative;
-    }
+.projects {
+    display: flex;
+    position: relative;
+}
 
-    .project-description {
-        text-align: center;
-        margin: auto;
-    }
+.project-description {
+    text-align: center;
+    margin: auto;
+}
 
-    .projects img {
-        width: 50%;
-        aspect-ratio: 16/9;
-        box-shadow: 0 0 4em -8px rgba(0, 0, 0, .15);
-    }
+.projects img {
+    width: 50%;
+    aspect-ratio: 16/9;
+    box-shadow: 0 0 4em -8px rgba(0, 0, 0, .15);
+}
 
-    .btn {
-        background: rgba(255, 249, 251, 0.27);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5.1px);
-        -webkit-backdrop-filter: blur(5.1px);
-        padding: 1rem 2rem;
-        display: inline-block;
-        font-size: 1rem;
-        margin: 4px 2px;
-        cursor: pointer;
-    }
+.btn {
+    background: rgba(255, 249, 251, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    padding: 1rem 2rem;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 
-    /* *********************************** */
-    /*            Contact section          */
-    /* *********************************** */
+/* *********************************** */
+/*            Contact section          */
+/* *********************************** */
 
-    .contact {
-        display: flex;
-    }
+.contact {
+    display: flex;
+}
 
-    .contact-links {
-        margin: auto;
-    }
-    .contact-icon {
-        text-align: center;
-        min-width: 70px;
-        margin: 15px;
-        padding: 20px;
-        font-size: 13px;
-        /* From https://css.glass */
-        background: rgba(255, 249, 251, 0.27);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5.1px);
-        -webkit-backdrop-filter: blur(5.1px);
-    }
+.contact-links {
+    margin: auto;
+}
 
-    .contact-form {
-        padding: 1em;
-        background: rgba(255, 249, 251, 0.27);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5.1px);
-        -webkit-backdrop-filter: blur(5.1px);
-    }
+.contact-icon {
+    text-align: center;
+    min-width: 70px;
+    margin: 15px;
+    padding: 20px;
+    font-size: 13px;
+    /* From https://css.glass */
+    background: rgba(255, 249, 251, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+}
 
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-        padding: .8em 1.1em;
-        margin: .8em 0;
-        border: 1px solid var(--color-black);
-        box-sizing: border-box;
-        background: rgba(255, 249, 251, 0.27);
-        border-radius: 16px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-        backdrop-filter: blur(5.1px);
-        -webkit-backdrop-filter: blur(5.1px);
-    }
+.contact-form {
+    padding: 1em;
+    background: rgba(255, 249, 251, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+}
 
-    .contact-form .btn {
-        min-width: 48%;
-    }
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: .8em 1.1em;
+    margin: .8em 0;
+    border: 1px solid var(--color-black);
+    box-sizing: border-box;
+    background: rgba(255, 249, 251, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+}
 
-    button[type=submit] {
-        color: var(--color-black);
-        background-color: var(--color-green);
-    }
-    button[type=submit]:hover {
-        color: var(--color-white);
-        background-color: green;
-    }
-    button[type=reset] {
-        color: var(--color-white);
-        background-color: var(--color-orange);
-    }
-    button[type=reset]:hover {
-        color: var(--color-white);
-        background-color: red;
-    }
+.contact-form .btn {
+    min-width: 48%;
+}
+
+button[type=submit] {
+    color: var(--color-black);
+    background-color: var(--color-green);
+}
+
+button[type=submit]:hover {
+    color: var(--color-white);
+    background-color: green;
+}
+
+button[type=reset] {
+    color: var(--color-white);
+    background-color: var(--color-orange);
+}
+
+button[type=reset]:hover {
+    color: var(--color-white);
+    background-color: red;
+}
 
 @media screen and (max-width: 768px) {
 
