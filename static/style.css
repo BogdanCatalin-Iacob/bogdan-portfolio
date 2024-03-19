@@ -51,11 +51,11 @@ h6 {
 .row {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 100%;
     margin: 1.5em .75em 0 .75em;
 }
 
-.row>* {
+.row > * {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
@@ -200,7 +200,6 @@ a:hover:after {
 }
 
 #hero-image {
-    min-height: 500px;
     width: 100%;
     float: left;
     margin-bottom: 10em;
@@ -568,7 +567,6 @@ button[type=reset]:hover {
 
     #main {
         width: 100%;
-        padding: 0 1em;
     }
 
     /* *********************************** */
