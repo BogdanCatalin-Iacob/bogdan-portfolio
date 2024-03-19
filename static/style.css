@@ -115,7 +115,7 @@ a:hover:after {
 
 .container-wrap {
     margin: 0 auto;
-    width: 70%;
+    max-width: 1170px;
 }
 
 #aside {
@@ -204,6 +204,11 @@ a:hover:after {
     margin-bottom: 10em;
     clear: both;
 }
+
+/* .side-img {
+    width: 50%;
+    border: 1px solid black;
+} */
 
 /* *********************************** */
 /*               About section         */
