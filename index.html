@@ -59,13 +59,11 @@
                 <div id="navbar" class="collapse text-center">
                     <ul>
                         <li><a href="#" class="active" data-nav-section="home">Home</a></li>
-                        <li><a href="#" data-nav-section="about">About</a></li>
-                        <li><a href="#" data-nav-section="services">Services</a></li>
-                        <li><a href="#" data-nav-section="skills">Skills</a></li>
-                        <li><a href="#" data-nav-section="education">Education</a></li>
-                        <li><a href="#" data-nav-section="experience">Experience</a></li>
-                        <li><a href="#" data-nav-section="work">Work</a></li>
-                        <li><a href="#" data-nav-section="contact">Contact</a></li>
+                        <li><a href="#about-section" data-nav-section="about">About</a></li>
+                        <li><a href="#skills-section" data-nav-section="skills">Skills</a></li>
+                        <li><a href="#education-section" data-nav-section="education">Education</a></li>
+                        <li><a href="#projects-section" data-nav-section="projects">Projects</a></li>
+                        <li><a href="#contact-section" data-nav-section="contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -92,7 +90,7 @@
                     <div class="hero-slide fade">
                         <div>
                             <h1>I am a <br>Full Stack <br>Developer</h1>
-                            <p><a class="btn">View Portfolio <i class="fa-solid fa-briefcase"></i></a>
+                            <p><a href="#projects-section" class="btn">View Portfolio <i class="fa-solid fa-briefcase"></i></a>
                             </p>
                         </div>
                         <img class="side-img" src="static/images/robot-pc.png" alt="robot working on laptop">
@@ -320,7 +318,7 @@
             <!-- end skills section -->
             <hr>
             <!-- education section -->
-            <section>
+            <section id="education-section">
                 <div class="row">
                     <div class="col">
                         <span class="heading-meta">My Learning</span>
@@ -345,7 +343,7 @@
             <!-- end education section -->
             <hr>
             <!-- work / projects section -->
-            <section>
+            <section id="projects-section">
                 <div class="row">
                     <div class="col">
                         <span class="heading-meta">My Work</span>
@@ -533,7 +531,7 @@
 
             <hr>
             <!-- contact section -->
-            <section>
+            <section id="contact-section">
                 <div class="row">
                     <div class="col">
                         <span class="heading-meta">Get in Touch</span>
@@ -569,7 +567,7 @@
                             <textarea name="message" id="message" cols="30" rows="10"></textarea>
 
                             <button type="submit" class="btn"><i class="fa-regular fa-paper-plane"></i> Send</button>
-                            <button type="reset" class="btn"><i class="fa-solid fa-xmark"></i> Cancel</button>
+                            <button type="reset" class="btn"><i class="fa-solid fa-xmark"></i> Reset</button>
 
                         </form>
                     </div>
