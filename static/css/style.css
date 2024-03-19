@@ -55,7 +55,7 @@ h6 {
     margin: 1.5em .75em 0 .75em;
 }
 
-.row > * {
+.row>* {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
@@ -202,7 +202,6 @@ a:hover:after {
 #hero-image {
     width: 100%;
     float: left;
-    margin-bottom: 10em;
     clear: both;
 }
 
@@ -215,13 +214,12 @@ a:hover:after {
 .slideshow-container {
     width: 100%;
     position: relative;
+    padding: 1em;
     margin: auto;
 }
 
 .side-img {
     width: 50%;
-    padding: 1em;
-    margin: 1em;
 }
 
 /* The dots/bullets/indicators */
@@ -236,9 +234,10 @@ a:hover:after {
     transition: background-color 0.6s ease;
 }
 
-.active-slide, .dot:hover {
+.active-slide,
+.dot:hover {
     background-color: var(--color-blue);
-  }
+}
 
 /* Fading animation */
 .fade {
@@ -250,6 +249,7 @@ a:hover:after {
     from {
         opacity: .4
     }
+
     to {
         opacity: 1
     }
@@ -314,7 +314,7 @@ a:hover:after {
     margin: 2em .5em 4em .5em;
     padding: 1em;
     min-width: 200px;
-    min-height: 250px;
+    min-height: 290px;
     box-shadow: 0 0 4em -8px rgba(0, 0, 0, .15);
     z-index: 0;
 }
@@ -583,6 +583,7 @@ button[type=reset]:hover {
 
     .services {
         margin-bottom: 4em;
+        min-height: 200px;
     }
 
     /* *********************************** */
@@ -596,5 +597,4 @@ button[type=reset]:hover {
     .projects img {
         width: 100%;
     }
-
 }
