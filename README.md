@@ -2,6 +2,7 @@
 This portfolio is made solely to showcase some of my work as Software developer
 
 ## Table of contents
+
 * [User Experience (UX)](#user-experience)
     * [User Stories](#user-stories)
 * [Structure](#structure)
@@ -17,6 +18,7 @@ This portfolio is made solely to showcase some of my work as Software developer
 * [Credits](#credits)
 
 ## User Experience
+
 -   ### User Stories
 
     | User story ID | As A/An | I want to be able | So that I can |
@@ -31,10 +33,21 @@ This portfolio is made solely to showcase some of my work as Software developer
 ## Design
 
 -   ### Typography
+
     -   Font used for the Headings: 'Playfair Display' with 'Georgia' as fallback (serif)
     -   Font used for all the other elements: 'Quicksand' with 'Arial' as fallback (sans-serif)
 
+-   ### Colours
+
+    Colours used throughout the site:
+    -   --color-black: #0C1618;
+    -   --color-orange: #FF8811;
+    -   --color-blue: #2288FC;
+    -   --color-green: #A1EF8B;
+    -   --color-white: #FFF9FB;
+
 ## Technologies
+
 -   HTML
 -   CSS
 -   [Font Awesome](https://fontawesome.com/) - used for icons throughout the website
@@ -43,5 +56,6 @@ This portfolio is made solely to showcase some of my work as Software developer
 -   [EmailJs](https://www.emailjs.com/)
 
 ## Credits
+
 -   Hexagon shapes for services section were created based on examples found on [James Tauber - CSS Hexagon Tutorial](https://jtauber.github.io/articles/css-hexagon.html)
 -   Skills cards background created using [GlassMorphism](https://css.glass/)
