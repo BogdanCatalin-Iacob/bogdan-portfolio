@@ -1,5 +1,16 @@
+// slides variables
 let slideIndex = 1;
 showSlides(slideIndex);
+
+// mobile nav variables
+const mobileHeading = document.getElementsByClassName("mobile-heading")[0];
+const menuBtn = document.getElementsByClassName("hamburger")[0];
+const mobileMenu = document.getElementById("aside");
+
+// mail form variables
+const modal = document.getElementsByClassName("mail-confirmation")[0];
+const modalClose = document.getElementById("close-btn");
+const contactForm = document.getElementById("contact-form");
 
 /**
  * Shows the current / active slide
@@ -43,11 +54,10 @@ function showSlides(n) {
 // set interval for hero slide images
 setInterval(plusSlides, 5000, 1);
 
-const mobileHeading = document.getElementsByClassName("mobile-heading")[0];
-// hamburger menu icon toggle
-const menuBtn = document.getElementsByClassName("hamburger")[0];
-const mobileMenu = document.getElementById("aside");
-menuBtn.addEventListener("click", () => {
+/**
+ * Toggle mobile menu on / off screen
+ */
+function toggleMobileMenu() {
     menuBtn.classList.toggle("is-active");
     mobileMenu.classList.toggle("is-active");
 
@@ -56,7 +66,7 @@ menuBtn.addEventListener("click", () => {
     } else {
         mobileHeading.style.visibility = "visible";
     }
-});
+}
 
 const navList = document.getElementsByClassName("nav-link");
 [...navList].forEach(element => {
@@ -65,3 +75,15 @@ const navList = document.getElementsByClassName("nav-link");
         mobileMenu.classList.remove("is-active");
     });
 });
+
+// form mail confirmation
+contactForm.addEventListener("submit", (e) => {
+    modal.style.display = "block";
+    contactForm.reset();
+});
+
+modalClose.onclick = () => {
+    modal.style.display = "none";
+}
+
+menuBtn.addEventListener("click", toggleMobileMenu);

@@ -555,6 +555,7 @@ a:hover:after {
 
 .contact {
     display: flex;
+    position: relative;
 }
 
 .contact-links {
@@ -582,6 +583,7 @@ a:hover:after {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.1px);
     -webkit-backdrop-filter: blur(5.1px);
+    text-align: center;
 }
 
 .contact-form input,
@@ -599,7 +601,8 @@ a:hover:after {
 }
 
 .contact-form .btn {
-    min-width: 48%;
+    min-width: 120px;
+    max-width: 160px;
 }
 
 button[type=submit] {
@@ -620,6 +623,35 @@ button[type=reset] {
 button[type=reset]:hover {
     color: var(--color-white);
     background-color: red;
+}
+
+.mail-confirmation {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+    background: rgba(99, 105, 102, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+    z-index: 13;
+}
+
+#close-btn {
+    background-color: var(--color-green);
+    z-index: 1011;
+}
+
+#close-btn:hover,
+#close-btn:focus,
+#close-btn:active {
+    color: var(--color-white);
+    background-color: green;
 }
 
 @media screen and (max-width: 768px) {
