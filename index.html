@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Bogdan Iacob">
     <meta name="description" content="Bogdan Iacob's portfolio">
@@ -38,18 +38,18 @@
 </head>
 
 <body>
+    <!-- mobile toggle -->
+    <div class="mobile-header">
+        <h1 class="mobile-heading">Bogdan Iacob</h1>
+        <button class="hamburger" aria-controls="navbar">
+            <div class="bar"></div>
+        </button>
+    </div>
+    <!-- end mobile toggle -->
+    
     <div class="container-wrap">
-        <!-- mobile toggle -->
-        <!-- <a href="#" class="js-nav-toggle nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-            aria-controls="navbar"><i></i></a> -->
-        <!-- <label class="hamburger-menu">
-            <input id="hamburger" type="checkbox">
-        </label> -->
-
-        <!-- end mobile toggle -->
-
         <!-- Author and navigation links -->
-        <aside id="aside" role="complementary">
+        <aside id="aside">
             <!-- Profile photo and title -->
             <div class="text-center">
                 <div class="author-img"></div>
@@ -85,7 +85,9 @@
                         <div>
                             <h1>Hi! <br>I'm Bogdan</h1>
                             <h2>Web Developer</h2>
-                            <p><a href="static/cv/Bogdan_Iacob_Software Developer_CV.pdf" target="_blank" aria-label="opens CV in a separate tab" class="btn">Download CV <i class="fa-solid fa-download"></i></a>
+                            <p><a href="static/cv/Bogdan_Iacob_Software Developer_CV.pdf" target="_blank"
+                                    aria-label="opens CV in a separate tab" class="btn">Download CV <i
+                                        class="fa-solid fa-download"></i></a>
                             </p>
                         </div>
                         <img class="side-img" src="static/images/businessperson.png" alt="tv head human graphic art">
