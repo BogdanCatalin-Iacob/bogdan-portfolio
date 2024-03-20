@@ -1,7 +1,3 @@
-/**
- * Slideshow on hero section
- */
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -44,5 +40,14 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "flex";
     dots[slideIndex - 1].classList.add("active-slide");
 }
-
+// set interval for hero slide images
 setInterval(plusSlides, 5000, 1);
+
+
+// hamburger menu icon toggle
+const menuBtn = document.getElementsByClassName("hamburger")[0];
+const mobileMenu = document.getElementById("aside");
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("is-active");
+    mobileMenu.classList.toggle("is-active");
+});
