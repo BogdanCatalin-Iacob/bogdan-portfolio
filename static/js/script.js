@@ -43,13 +43,19 @@ function showSlides(n) {
 // set interval for hero slide images
 setInterval(plusSlides, 5000, 1);
 
-
+const mobileHeading = document.getElementsByClassName("mobile-heading")[0];
 // hamburger menu icon toggle
 const menuBtn = document.getElementsByClassName("hamburger")[0];
 const mobileMenu = document.getElementById("aside");
 menuBtn.addEventListener("click", () => {
     menuBtn.classList.toggle("is-active");
     mobileMenu.classList.toggle("is-active");
+
+    if (mobileMenu.classList.contains("is-active")) {
+        mobileHeading.style.visibility = "hidden";
+    } else {
+        mobileHeading.style.visibility = "visible";
+    }
 });
 
 const navList = document.getElementsByClassName("nav-link");
@@ -57,5 +63,5 @@ const navList = document.getElementsByClassName("nav-link");
     element.addEventListener("click", () => {
         menuBtn.classList.remove("is-active");
         mobileMenu.classList.remove("is-active");
-    })
-})
+    });
+});
