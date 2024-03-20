@@ -286,6 +286,7 @@ a:hover:after {
     position: relative;
     padding: 1em;
     margin: auto;
+    box-sizing: border-box;
 }
 
 .side-img {
