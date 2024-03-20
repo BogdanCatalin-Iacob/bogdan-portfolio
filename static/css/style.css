@@ -156,7 +156,7 @@ a:hover:after {
     z-index: 20;
     /* From https://css.glass */
     background: rgba(255, 249, 251, 0);
-    backdrop-filter: blur(5.1px);
+    backdrop-filter: blur(-0.5px);
     -webkit-backdrop-filter: blur(5.1px);
 }
 
