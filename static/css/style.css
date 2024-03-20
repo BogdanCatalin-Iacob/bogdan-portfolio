@@ -146,13 +146,9 @@ a:hover:after {
     -webkit-backdrop-filter: blur(5.1px);
 }
 
-.mobile-heading {
-    padding-left: 1em;
-}
-
 .hamburger {
     display: block;
-    width: var(--bar-width) * 2;
+    width: calc(var(--bar-width) * 2);
     cursor: pointer;
     appearance: none;
     outline: none;
