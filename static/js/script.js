@@ -51,3 +51,11 @@ menuBtn.addEventListener("click", () => {
     menuBtn.classList.toggle("is-active");
     mobileMenu.classList.toggle("is-active");
 });
+
+const navList = document.getElementsByClassName("nav-link");
+[...navList].forEach(element => {
+    element.addEventListener("click", () => {
+        menuBtn.classList.remove("is-active");
+        mobileMenu.classList.remove("is-active");
+    })
+})
