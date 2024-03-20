@@ -8,6 +8,12 @@
     --color-blue: #2288FC;
     --color-green: #A1EF8B;
     --color-white: #FFF9FB;
+
+    --bar-width: 60px;
+    --bar-height: 8px;
+    --hamburger-gap: 8px;
+    --hamburger-margin: 5px;
+    --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
 
 html,
@@ -127,13 +133,74 @@ a:hover:after {
     max-width: 1170px;
 }
 
+.mobile-header {
+    display: none;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    position: fixed;
+    width: 100%;
+    z-index: 20;
+    /* From https://css.glass */
+    background: rgba(255, 249, 251, 0.27);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+}
+
+.mobile-heading {
+    padding-left: 1em;
+}
+
+.hamburger {
+    display: block;
+    width: var(--bar-width) * 2;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    border: none;
+    z-index: 20;
+    /* From https://css.glass */
+    background: rgba(255, 249, 251, 0);
+    backdrop-filter: blur(5.1px);
+    -webkit-backdrop-filter: blur(5.1px);
+}
+
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+    content: "";
+    display: block;
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--color-black);
+    margin: var(--hamburger-margin);
+    border-radius: 100px;
+    transform-origin: right center;
+    transition: 0.4s;
+    z-index: 21;
+}
+
+.hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-2%, -130%);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.hamburger.is-active::after {
+    transform: rotate(45deg) translate(2%, 160%);
+}
+
 #aside {
+    display: block;
+    position: fixed;
+    top: 0;
+    min-height: 100vh;
     padding-top: 3em;
     padding-bottom: 40px;
     float: left;
     width: 300px;
-    position: fixed;
-    z-index: 1000;
+    z-index: 1;
     background-color: #f2f3f7;
 }
 
@@ -146,15 +213,14 @@ a:hover:after {
 }
 
 .author-img {
-    background-color: #0C1618;
+    background-color: var(--color-black);
     background-image: url("../../static/images/bogdan_no_background.webp");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    position: relative;
 }
 
-.position {
+.position-title {
     display: block;
     margin-bottom: 1em;
     font-size: 13px;
@@ -444,6 +510,11 @@ a:hover:after {
     -webkit-backdrop-filter: blur(5.1px);
 }
 
+.skills-item h2 {
+    font-size: .8rem;
+    font-weight: 400;
+}
+
 .education {
     text-align: center;
 }
@@ -556,13 +627,31 @@ button[type=reset]:hover {
 
 @media screen and (max-width: 768px) {
 
+    .container-wrap {
+        padding-top: 5.5em;
+    }
+
+    .mobile-header {
+        display: flex;
+    }
+
     #aside {
         -moz-transform: translate(-300px);
         -webkit-transform: translate(-300px);
         -o-transform: translate(-300px);
         -ms-transform: translate(-300px);
         transform: translate(-300px);
-        padding-top: 4em;
+        padding-top: 5.5em;
+        transition: transform .5s;
+    }
+
+    #aside.is-active {
+        -moz-transform: translate(0px);
+        -webkit-transform: translate(0px);
+        -o-transform: translate(0px);
+        -ms-transform: translate(0px);
+        transform: translate(0px);
+        transition: transform .5s;
     }
 
     #navbar ul {
