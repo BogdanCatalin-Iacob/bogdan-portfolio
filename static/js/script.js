@@ -2,6 +2,18 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
+// navbar link active
+let navLinks = document.getElementsByClassName('nav-link');
+
+for (let link of navLinks){
+    link.addEventListener('click', () => {
+        let current = document.getElementsByClassName('active')[0];
+        current.classList.remove('active');
+        link.classList.add('active');
+    });
+}
+
+
 // mobile nav variables
 const mobileHeading = document.getElementsByClassName("mobile-heading")[0];
 const menuBtn = document.getElementsByClassName("hamburger")[0];

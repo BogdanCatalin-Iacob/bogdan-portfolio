@@ -254,8 +254,8 @@ a:hover:after {
     padding: .6em 0;
 }
 
-.active {
-    color: var(--color-blue) !important;
+.active a {
+    color: var(--color-orange) !important;
     text-decoration: underline;
 }
 
